@@ -1,11 +1,12 @@
+import os
 import telebot
 import requests
 import schedule
 import time
 import threading
 
-# ۱. توکن ربات خودت رو اینجا بذار
-TOKEN = "9195172603:AAEe1QMvLKJU_Ihc_REzHm3O6PjeQn1YYaM" 
+# توکن از متغیر محیطی Render خونده می‌شه
+TOKEN = os.environ["BOT_TOKEN"]
 bot = telebot.TeleBot(TOKEN)
 
 # متغیری برای ذخیره آیدی چت
